@@ -1,0 +1,35 @@
+<div class="w-[68.92%] m-auto mt-52 bg-[#458ff6] h-[425px] rounded-3xl p-1">
+    <p class="font-bold text-4xl my-16 text-white w-[53.13%] mx-auto">What our customers are saying</p>
+    <div *ngFor="let slide of slides; let i =index" @carousel>
+        <div class="flex mx-[10%]"  *ngIf=" i===currentSlide"  >
+        <div class="w-[133px] h-[133px] rounded-full ">
+            <img class="w-full h-full rounded-full " [src]="slide.src">
+        </div>
+        <div class="flex flex-col mr-[15.71%] ml-[3.6%]">
+            <p class="text-white font-bold text-2xl">{{slide.name}}</p>
+            <p class="text-white font-normal text-lg">{{slide.occupation}}</p>
+        </div>
+        <p class="text-white w-[37.5%]">{{slide.message}}</p>
+    </div>
+    </div>
+    
+</div>
+
+
+
+<div class="flex  w-half m-auto">
+    <div class="icon">
+        <div class="arrow"></div>
+    </div>
+
+</div>
+
+<button (click)="onPreviousClick()">
+    <span>Left</span>
+</button>
+<button (click)="onNextClick()">
+    <span>Right</span>
+</button>
+<div>
+    <h1>hey</h1>
+</div>
