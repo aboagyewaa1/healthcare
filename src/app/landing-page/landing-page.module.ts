@@ -31,6 +31,7 @@ import { TopComponent } from './top/top.component';
     BrowserAnimationsModule,
     BrowserModule,
     SharedModule
-  ]
+  ],
+  
 })
 export class LandingPageModule { }
