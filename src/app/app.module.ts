@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { UsersModule } from './users/users.module';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -19,7 +20,8 @@ import { UsersModule } from './users/users.module';
     BrowserModule,
     AppRoutingModule,
     LandingPageModule,
-    UsersModule
+    UsersModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
