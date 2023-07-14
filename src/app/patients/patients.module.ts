@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent2 } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 import { ViewDoctorsComponent } from './view-doctors/view-doctors.component';
+// import { PatientsRoutingModule } from './patients-routing.module';
 
 
 
@@ -13,7 +14,9 @@ import { ViewDoctorsComponent } from './view-doctors/view-doctors.component';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    
+    
   ],
   exports:[
     DashboardComponent2,

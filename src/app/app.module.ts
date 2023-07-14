@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { UsersModule } from './users/users.module';
 import { SharedModule } from './shared/shared.module';
+import { PatientsDashboardComponent } from './patients-dashboard/patients-dashboard.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+   
    
 
     

@@ -11,9 +11,9 @@ const routes: Routes = [
         path:'',children:[
             {path:'login', component:LoginComponent},
             {path:'register', component:RegisterComponent},
-            {path:'doctor', component:DashboardComponent},
-            {path:'admin', component:DashboardComponent1},
-            {path:'patient', component:DashboardComponent2}
+            // {path:'doctor', component:DashboardComponent},
+            // {path:'admin', component:DashboardComponent1},
+            // {path:'patient', component:DashboardComponent2}
         
         ]
 
