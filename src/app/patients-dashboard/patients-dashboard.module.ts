@@ -6,16 +6,15 @@ import { PatientsDashboardComponent } from './patients-dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 import { ViewDoctorsComponent } from './view-doctors/view-doctors.component';
 import { HomeComponent } from './home/home.component';
-
-
-
+import { PatientsChatComponent } from './patients-chat/patients-chat.component';
 
 
 @NgModule({
   declarations: [
     PatientsDashboardComponent,
     ViewDoctorsComponent,
-    HomeComponent
+    HomeComponent,
+    PatientsChatComponent
    
   ],
   imports: [

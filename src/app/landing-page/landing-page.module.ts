@@ -10,6 +10,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HeaderComponent } from '../shared/header/header.component';
 import { SharedModule } from '../shared/shared.module';
 import { TopComponent } from './top/top.component';
+import { UsersModule } from '../users/users.module';
 
 
 
@@ -30,7 +31,7 @@ import { TopComponent } from './top/top.component';
     CommonModule,
     BrowserAnimationsModule,
     BrowserModule,
-    SharedModule
+    SharedModule,
   ],
   
 })

@@ -6,6 +6,7 @@ import { NavComponent } from './nav/nav.component';
 import { RouterLink } from '@angular/router';
 import { ChatComponent } from './chat/chat.component';
 import { UsersHeaderComponent } from './users-header/users-header.component';
+import { OpenChatComponent } from './open-chat/open-chat.component';
 
 
 
@@ -16,7 +17,8 @@ import { UsersHeaderComponent } from './users-header/users-header.component';
     HeaderComponent,
     NavComponent,
     ChatComponent,
-    UsersHeaderComponent
+    UsersHeaderComponent,
+    OpenChatComponent
   ],
   imports: [
     CommonModule,
@@ -26,6 +28,9 @@ import { UsersHeaderComponent } from './users-header/users-header.component';
   ],
   exports:[HeaderComponent,
   NavComponent,
-UsersHeaderComponent]
+UsersHeaderComponent,
+ChatComponent,
+OpenChatComponent
+]
 })
 export class SharedModule { }

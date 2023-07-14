@@ -1,4 +1,5 @@
-<div class="flex bg-[#F3F9FF] flex-wrap px-10">
+<app-users-header [title]="'Doctors'"></app-users-header>
+<div class="flex bg-[#F3F9FF] flex-wrap ">
     <div class="bg-white w-[338px] rounded-3xl h-[350px] mr-10 mt-10 flex flex-col justify-center items-center" *ngFor="let doc of doctors">
         <img class="rounded-full mb-6  w-[120px] h-[120px]" [src]="doc.photo">
         <p class="text-2xl font-bold text-[#0119B6]">{{doc.name}}</p>

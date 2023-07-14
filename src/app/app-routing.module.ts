@@ -9,8 +9,9 @@ const patientsModule = () => import('./patients-dashboard/patients-dashboard.mod
 const routes: Routes = [
 
   {path:'', component:LandingPageComponent},
-  {path:'', loadChildren:usersModule},
-  {path:'patient-dashboard', loadChildren:patientsModule}
+  {path:'users', loadChildren:usersModule},
+  {path:'patient-dashboard', loadChildren:patientsModule},
+  
 ];
 
 @NgModule({

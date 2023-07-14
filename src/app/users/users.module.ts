@@ -6,6 +6,8 @@ import { SharedModule } from '../shared/shared.module';
 import { RegisterComponent } from './register/register.component';
 import { DoctorsModule } from '../doctors/doctors.module';
 import { AdminModule } from '../admin/admin.module';
+import { PatientsDashboardModule } from '../patients-dashboard/patients-dashboard.module';
+import { RouterLink } from '@angular/router';
 
 
 
@@ -23,8 +25,12 @@ import { AdminModule } from '../admin/admin.module';
     SharedModule,
     DoctorsModule,
     AdminModule,
+    PatientsDashboardModule,
+    RouterLink,
     
   ],
-  exports:[LoginComponent]
+  exports:[LoginComponent],
+  
+
 })
 export class UsersModule { }

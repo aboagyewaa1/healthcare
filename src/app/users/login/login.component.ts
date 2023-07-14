@@ -17,7 +17,7 @@ export class LoginComponent {
   // })
   loginForm = this.fb.group({
     email: ['', Validators.email],
-    password: ['', Validators.minLength(4)]
+    password: ['', Validators.minLength(0)]
   })
   onSubmitLogin(){
     this.userService.login(this.loginForm.getRawValue()).subscribe({
