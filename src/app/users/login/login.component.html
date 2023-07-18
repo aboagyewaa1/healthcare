@@ -8,7 +8,7 @@
                 <label>Password</label>
                 <input class="w-full h-12 py-4 pl-5 border-[#cacdd2] hover:border-[#5B9BF3] active:border-[#5B9BF3] shadow-md border-2 rounded-md mt-3" type="text" placeholder="******************">
                 <p class="mt-5 text-base text-[#2a1e17] font-medium">Forgot Password? Click <a class="text-[#5B9BF3] underline">here</a></p>
-                <button class="w-full mt-9 text-white text-xl font-bold bg-[#458DFC] h-12 rounded-3xl"><a [routerLink]="'/patient-dashboard/home'">Login</a></button>
+                <button class="w-full mt-9 text-white text-xl font-bold bg-[#458DFC] h-12 rounded-3xl" (click)="navigatePlace()"><a >Login</a></button>
             </form>
 
             <p class="w-[49.92%] m-auto mt-40 text-base text-[#2a1e17] font-bold" >Don't have an account yet ? Register <a class="text-[#5B9BF3] underline" [routerLink]="['/register']">here</a></p>
@@ -19,3 +19,5 @@
         <img src="../../../assets/images/drugs.jpg">
     </div>
 </div>
+
+<router-outlet></router-outlet>

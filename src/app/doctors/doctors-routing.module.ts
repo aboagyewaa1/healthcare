@@ -21,6 +21,6 @@ const routes: Routes = [
     exports:[RouterModule]
 })
 
-export class PatientsDashboardRoutingModule{
+export class DoctorsRoutingModule{
 
 }
