@@ -1,7 +1,7 @@
 <div class="flex  h-screen">
-    <app-nav [item1]="'Home'" [item2]="'Doctors'"[item3]="'Chat'"/>
-    <div>
-
+    <app-nav [navData]="navData1"/>
+    <div class="w-full px-12 bg-[#F3F9FF]">
+        <router-outlet></router-outlet>
     </div>
 
 </div>

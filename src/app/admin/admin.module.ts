@@ -5,19 +5,25 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { RouterLink } from '@angular/router';
 import { AllDoctorsComponent } from './all-doctors/all-doctors.component';
+import { UsersModule } from '../users/users.module';
+import { PatientsDashboardModule } from '../patients-dashboard/patients-dashboard.module';
+import { AddDoctorComponent } from './add-doctor/add-doctor.component';
 
 
 
 @NgModule({
   declarations: [
     DashboardComponent1,
-    AllDoctorsComponent
+    AllDoctorsComponent,
+    AddDoctorComponent
   ],
   imports: [
     CommonModule,
     AdminRoutingModule,
     SharedModule,
-   RouterLink
+   RouterLink,
+   PatientsDashboardModule
+  
   ],
   exports:[
     DashboardComponent1

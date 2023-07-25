@@ -26,6 +26,6 @@ import { PatientsChatComponent } from './patients-chat/patients-chat.component';
      
    
   ],
-  exports:[]
+  exports:[ViewDoctorsComponent]
 })
 export class PatientsDashboardModule { }

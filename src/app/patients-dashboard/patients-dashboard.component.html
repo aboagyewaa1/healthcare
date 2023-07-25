@@ -1,9 +1,10 @@
 <div class="flex  h-screen">
     <div>
-        <app-nav [item1]="'Home'" [item2]="'Doctors'"[item3]="'Chat'"/>
+        <app-nav [navData]="navData"/>
     </div>
+    
     <div class="bg-[#F3F9FF] w-screen px-[3.17%] h-screen ">
-        
+        <img src="../patients-dashboard/home/home.component.html">
         <router-outlet></router-outlet>
     </div>
 

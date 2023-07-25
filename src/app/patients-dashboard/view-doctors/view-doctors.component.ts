@@ -11,39 +11,48 @@ export class ViewDoctorsComponent implements OnInit {
     {name: "Bertina Ayuure",
     specialization: "Gynaecology",
     email: "ayuure56@gmail.com",
-    photo:"../../../../assets/images/pinky.png"
+    photo:"../../../../assets/images/pinky.png",
+    status: "following"
   },
   {name: "Bertina Ayuure",
   specialization: "Gynaecology",
   email: "ayuure56@gmail.com",
-  photo:"../../../../assets/images/pinky.png"
+  photo:"../../../../assets/images/pinky.png",
+  status: "follow"
 },
 {name: "Bertina Ayuure",
 specialization: "Gynaecology",
 email: "ayuure56@gmail.com",
-photo:"../../../../assets/images/pinky.png"
+photo:"../../../../assets/images/pinky.png",
+status: "following"
 },
 {name: "Bertina Ayuure",
 specialization: "Gynaecology",
 email: "ayuure56@gmail.com",
-photo:"../../../../assets/images/pinky.png"
+photo:"../../../../assets/images/pinky.png",
+status: "follow"
 },
 {name: "Bertina Ayuure",
 specialization: "Gynaecology",
 email: "ayuure56@gmail.com",
-photo:"../../../../assets/images/pinky.png"
+photo:"../../../../assets/images/pinky.png",
+status: "follow"
 },
 {name: "Bertina Ayuure",
 specialization: "Gynaecology",
 email: "ayuure56@gmail.com",
-photo:"../../../../assets/images/pinky.png"
+photo:"../../../../assets/images/pinky.png",
+status: "following"
 },
 {name: "Bertina Ayuure",
 specialization: "Gynaecology",
 email: "ayuure56@gmail.com",
-photo:"../../../../assets/images/pinky.png"
+photo:"../../../../assets/images/pinky.png",
+status: "following"
 }
   ]
+
+ 
 
   constructor(){}
 
