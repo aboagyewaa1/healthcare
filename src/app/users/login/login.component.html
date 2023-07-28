@@ -2,13 +2,21 @@
     <div class="w-1/2 bg-white flex items-center">
         <div class="w-[66.77%] m-auto shadow-smm sm:h-[85vh] h-[67vh]">
             <p class="text-4xl font-extrabold w-28 m-auto mb-[10%] mt-[17%]">Login</p>
-            <form class="flex flex-col w-[62.4%] m-auto ">
+            <form class="flex flex-col w-[62.4%] m-auto" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
                 <label>Email</label>
-                <input class="w-full h-12 py-4 pl-5 border-[#cacdd2] hover:border-[#5B9BF3] active:border-[#5B9BF3] shadow-md border-2 rounded-md mt-3" type="text" placeholder="username@gmail.com">
+                <input class="w-full h-12 py-4 pl-5 border-[#cacdd2] hover:border-[#5B9BF3] active:border-[#5B9BF3] shadow-md border-2 rounded-md mt-3" type="text" placeholder="username@gmail.com" formControlName="email">
+                <div *ngIf="loginForm.get('email')?.touched && !loginForm.get('email')?.valid" class="text-red-500 text-sm ">
+                  <div *ngIf="loginForm.get('email')?.errors?.['required']" >Email is required</div>
+                  <div *ngIf="loginForm.get('email')?.errors?.['email']">Invalid Email</div>
+                </div>
                 <label>Password</label>
-                <input class="w-full h-12 py-4 pl-5 border-[#cacdd2] hover:border-[#5B9BF3] active:border-[#5B9BF3] shadow-md border-2 rounded-md mt-3" type="text" placeholder="******************">
+                <input class="w-full h-12 py-4 pl-5 border-[#cacdd2] hover:border-[#5B9BF3] active:border-[#5B9BF3] shadow-md border-2 rounded-md mt-3" type="text" placeholder="******************" formControlName="password">
+                <div *ngIf="loginForm.get('password')?.touched && !loginForm.get('password')?.valid" class="text-red-500 text-sm">
+                  <div>Password is required</div>
+                  <!-- <div *ngIf="loginForm.get('password')?.errors?.['password']">Email is required</div> -->
+                </div>
                 <p class="mt-5 text-base text-[#2a1e17] font-medium">Forgot Password? Click <a class="text-[#5B9BF3] underline">here</a></p>
-                <button class="w-full mt-9 text-white text-xl font-bold bg-[#458DFC] h-12 rounded-3xl" (click)="navigatePlace()"><a >Login</a></button>
+                <button [disabled]="!loginForm.valid" type="submit" class="w-full mt-9 text-white text-xl font-bold bg-[#458DFC] h-12 rounded-3xl" ><a >Login</a></button>
             </form>
 
             <p class="w-[49.92%] m-auto mt-40 text-base text-[#2a1e17] font-bold" >Don't have an account yet ? Register <a class="text-[#5B9BF3] underline" [routerLink]="['/register']">here</a></p>
@@ -16,7 +24,7 @@
 
     </div>
     <div class="w-1/2 h-screen ">
-        <img src="../../../assets/images/drugs.jpg">
+        <img alt="image1" src="../../../assets/images/drugs.jpg">
     </div>
 </div>
 

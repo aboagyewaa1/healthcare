@@ -16,23 +16,23 @@ export class LoginComponent {
   //   email:new FormControl(''),
   //   password: new FormControl('')
   // })
-  // loginForm = this.fb.group({
-  //   email: ['', Validators.email],
-  //   password: ['', Validators.minLength(0)]
-  // })
-  // onSubmitLogin(){
-  //   this.userService.login(this.loginForm.getRawValue()).subscribe({
-  //     next: (value)=> {
+  loginForm = this.fb.group({
+    email: ['',[ Validators.required, Validators.email]],
+    password: ['', Validators.required]
+  })
+  onSubmitLogin(){
+    // this.userService.login(this.loginForm.getRawValue()).subscribe({
+    //   next: (value)=> {
 
-  //     },
-  //     error: ()=>{
-        
-  //     }
-  //   })
-  // }
+    //   },
+    //   error: ()=>{
 
-  navigatePlace(){
-    this.route.navigate(['patient-dashboard/home'])
+    //   }
+    // })
+    console.log(this.loginForm.value)
+     this.route.navigate(['patient-dashboard/home']);
   }
+
+
 
 }

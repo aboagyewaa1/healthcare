@@ -8,16 +8,17 @@ import { UsersModule } from './users/users.module';
 import { SharedModule } from './shared/shared.module';
 import { PatientsDashboardComponent } from './patients-dashboard/patients-dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
+import { StoreModule } from '@ngrx/store';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-   
-   
 
-    
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -25,7 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
     LandingPageModule,
     UsersModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({}),
+    // EffectsModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]

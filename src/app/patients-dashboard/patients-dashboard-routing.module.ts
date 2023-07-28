@@ -8,7 +8,7 @@ import { PatientsChatComponent } from "./patients-chat/patients-chat.component";
 
 const routes: Routes = [
     {
-        path:'patient-dashboard', component:PatientsDashboardComponent, children:[
+        path:'', component:PatientsDashboardComponent, children:[
          {path:'view-doctors', component:ViewDoctorsComponent},
          {path: '', redirectTo:'home', pathMatch:'full'},
          {path: 'home', component:HomeComponent},

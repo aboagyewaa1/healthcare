@@ -8,6 +8,7 @@ import { DoctorsModule } from '../doctors/doctors.module';
 import { AdminModule } from '../admin/admin.module';
 import { PatientsDashboardModule } from '../patients-dashboard/patients-dashboard.module';
 import { RouterLink } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -27,10 +28,11 @@ import { RouterLink } from '@angular/router';
     AdminModule,
     PatientsDashboardModule,
     RouterLink,
-    
+    ReactiveFormsModule
+
   ],
   exports:[LoginComponent],
-  
+
 
 })
 export class UsersModule { }
