@@ -27,7 +27,7 @@ import { StoreModule } from '@ngrx/store';
     UsersModule,
     SharedModule,
     HttpClientModule,
-    StoreModule.forRoot({}),
+    // StoreModule.forRoot({}),
     // EffectsModule.forRoot({})
   ],
   providers: [],
